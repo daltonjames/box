@@ -26,7 +26,17 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_left" id="8"></block>
+              <block type="movement_left" id="8">
+                <next>
+                  <block type="robot_delay" id="16" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="17">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
             </statement>
             <next>
               <block type="controls_if" id="9" inline="false">
