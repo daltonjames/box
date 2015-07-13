@@ -54,32 +54,45 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_setmotors" id="8" inline="true">
-                    <value name="BOTHMOVLEFT">
-                      <block type="math_number" id="9">
-                        <field name="NUM">-1000</field>
-                      </block>
-                    </value>
-                    <value name="BOTHMOVRIGHT">
-                      <block type="math_number" id="10">
-                        <field name="NUM">1000</field>
-                      </block>
-                    </value>
+                  <block type="movement_forward" id="80">
                     <next>
-                      <block type="robot_delay" id="11" inline="true">
+                      <block type="robot_delay" id="81" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="12">
-                            <field name="NUM">1000</field>
+                          <block type="math_number" id="82">
+                            <field name="NUM">300</field>
                           </block>
                         </value>
                         <next>
-                          <block type="variables_set" id="62" inline="true">
-                            <field name="VAR">i</field>
-                            <value name="VALUE">
-                              <block type="math_number" id="63">
-                                <field name="NUM">1</field>
+                          <block type="movement_setmotors" id="8" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="math_number" id="9">
+                                <field name="NUM">-1000</field>
                               </block>
                             </value>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="math_number" id="10">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="robot_delay" id="11" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="12">
+                                    <field name="NUM">1200</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="62" inline="true">
+                                    <field name="VAR">i</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id="63">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -119,7 +132,7 @@
                           <block type="robot_delay" id="20" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="21">
-                                <field name="NUM">1000</field>
+                                <field name="NUM">1200</field>
                               </block>
                             </value>
                           </block>
