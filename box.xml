@@ -59,7 +59,7 @@
                       <block type="movement_forward" id="80">
                         <next>
                           <block type="led_select" id="94" inline="true">
-                            <field name="ACTION">FLASH</field>
+                            <field name="ACTION">ON</field>
                             <value name="LED">
                               <block type="math_number" id="95">
                                 <field name="NUM">0</field>
@@ -67,7 +67,7 @@
                             </value>
                             <next>
                               <block type="led_select" id="96" inline="true">
-                                <field name="ACTION">FLASH</field>
+                                <field name="ACTION">ON</field>
                                 <value name="LED">
                                   <block type="math_number" id="97">
                                     <field name="NUM">5</field>
@@ -100,13 +100,33 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="variables_set" id="62" inline="true">
-                                                <field name="VAR">i</field>
-                                                <value name="VALUE">
-                                                  <block type="math_number" id="63">
-                                                    <field name="NUM">1</field>
+                                              <block type="led_select" id="119" inline="true">
+                                                <field name="ACTION">OFF</field>
+                                                <value name="LED">
+                                                  <block type="math_number" id="120">
+                                                    <field name="NUM">0</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="led_select" id="121" inline="true">
+                                                    <field name="ACTION">OFF</field>
+                                                    <value name="LED">
+                                                      <block type="math_number" id="122">
+                                                        <field name="NUM">5</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id="62" inline="true">
+                                                        <field name="VAR">i</field>
+                                                        <value name="VALUE">
+                                                          <block type="math_number" id="63">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
@@ -152,7 +172,7 @@
                             </value>
                             <next>
                               <block type="led_select" id="98" inline="true">
-                                <field name="ACTION">FLASH</field>
+                                <field name="ACTION">ON</field>
                                 <value name="LED">
                                   <block type="math_number" id="99">
                                     <field name="NUM">1</field>
@@ -160,10 +180,10 @@
                                 </value>
                                 <next>
                                   <block type="led_select" id="108" inline="true">
-                                    <field name="ACTION">FLASH</field>
+                                    <field name="ACTION">ON</field>
                                     <value name="LED">
                                       <block type="math_number" id="109">
-                                        <field name="NUM">5</field>
+                                        <field name="NUM">4</field>
                                       </block>
                                     </value>
                                     <next>
@@ -173,6 +193,26 @@
                                             <field name="NUM">1300</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="led_select" id="123" inline="true">
+                                            <field name="ACTION">OFF</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="124">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="led_select" id="125" inline="true">
+                                                <field name="ACTION">OFF</field>
+                                                <value name="LED">
+                                                  <block type="math_number" id="126">
+                                                    <field name="NUM">4</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
