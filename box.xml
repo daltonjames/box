@@ -26,7 +26,17 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_left" id="8">
+              <block type="movement_setmotors" id="27" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="28">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="29">
+                    <field name="NUM">-100</field>
+                  </block>
+                </value>
                 <next>
                   <block type="robot_delay" id="16" inline="true">
                     <value name="DELAY">
